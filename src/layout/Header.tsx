@@ -1,7 +1,11 @@
 import React from 'react';
+import { SelectedAnimalsContext } from '../core/providers/selectedAnimals.provider';
 const pawsIcon = require('../assets/icons/paws.png');
+const cartIcon = require('../assets/icons/cart.png');
 
 export const Header = () => {
+  const {animals, addNewAnimal} = React.useContext(SelectedAnimalsContext);
+
   return (
     <nav className='nav'>
       <div className='nav--info'>
@@ -28,7 +32,10 @@ export const Header = () => {
           </ul>
         </section>
         <section className='cart'>
-          <p>Cart: 0</p> 
+          <div className='cart--imgContainer'>
+            <img className='img' src={cartIcon} alt="cart icon" />
+          </div>
+          <p className='cart--number'>{animals.length}</p> 
         </section>
       </div>
     </nav>
