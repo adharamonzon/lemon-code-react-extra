@@ -75,5 +75,82 @@
       "url": "./cats/image15.jpg",
       "id": 15
     }
+  ],
+  "dogs": [
+    {
+      "name": "Baylor",
+      "url": "./dogs/image16.jpg",
+      "id": 16
+    },
+    {
+      "name": "Kody",
+      "url": "./dogs/image17.jpg",
+      "id": 17
+    },
+    {
+      "name": "Lisha",
+      "url": "./dogs/image18.jpg",
+      "id": 18
+    },
+    {
+      "name": "Jean",
+      "url": "./dogs/image19.jpg",
+      "id": 19
+    },
+    {
+      "name": "Miles",
+      "url": "./dogs/image20.jpg",
+      "id": 20
+    },
+    {
+      "name": "Garry",
+      "url": "./dogs/image21.jpg",
+      "id": 21
+    },
+    {
+      "name": "Trevor",
+      "url": "./dogs/image22.jpg",
+      "id": 22
+    },
+    {
+      "name": "Tolly",
+      "url": "./dogs/image23.jpg",
+      "id": 23
+    },
+    {
+      "name": "Mad",
+      "url": "./dogs/image24.jpg",
+      "id": 24
+    },
+    {
+      "name": "Robin",
+      "url": "./dogs/image25.jpg",
+      "id": 25
+    },
+    {
+      "name": "Jerry",
+      "url": "./dogs/image26.jpg",
+      "id": 26
+    },
+    {
+      "name": "Matt",
+      "url": "./dogs/image27.jpg",
+      "id": 27
+    },
+    {
+      "name": "Sherri",
+      "url": "./dogs/image28.jpg",
+      "id": 28
+    },
+    {
+      "name": "Kole",
+      "url": "./dogs/image29.jpg",
+      "id": 29
+    },
+    {
+      "name": "Charli",
+      "url": "./dogs/image30.jpg",
+      "id": 30
+    }
   ]
 }

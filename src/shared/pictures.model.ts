@@ -1,5 +1,5 @@
 export interface Pictures {
-  title: string,
+  name: string,
   url: string,
   id: number,
   selected?: boolean

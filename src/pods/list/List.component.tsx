@@ -15,7 +15,7 @@ export const ListComponent : React.FC<Props> = (props) => {
     data.selected = true;
     animalsSelected.push(data);
     animalsSelected.forEach((animal) => {
-      addNewAnimal(Array(animal))
+      addNewAnimal(animal);
     })
   }
 
@@ -23,7 +23,7 @@ export const ListComponent : React.FC<Props> = (props) => {
     <ul className='list'>
        {pictures.map((picture) => (
           <li className='list--item' key={picture.id} onClick={() => addSelectedPhoto(picture)}>
-             <h2 className='list--item__title'>{picture.title}</h2>
+             <h2 className='list--item__title'>{picture.name}</h2>
              <div className='list--item__imgContainer'>
               <img className='img' src={picture.url} alt="picture photo" />
              </div>

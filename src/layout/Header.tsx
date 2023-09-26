@@ -1,11 +1,11 @@
 import React from 'react';
-import { SelectedAnimalsContext } from '../core/providers/selectedAnimals.provider';
 const pawsIcon = require('../assets/icons/paws.png');
-const cartIcon = require('../assets/icons/cart.png');
 
-export const Header = () => {
-  const {animals, addNewAnimal} = React.useContext(SelectedAnimalsContext);
-
+interface Props {
+  setAnimals : (data: string) => void,
+}
+export const Header: React.FC<Props> = (props) => {
+  
   return (
     <nav className='nav'>
       <div className='nav--info'>
@@ -24,18 +24,12 @@ export const Header = () => {
         <section >
           <ul className='nav--list'>
             <li className='nav--list__item'>
-              <button className='nav--list__btn' type="button">Cats</button>
+              <button className='nav--list__btn' type="button" onClick={() => props.setAnimals('cats')}>Cats</button>
             </li>
             <li className='nav--list__item'>
-              <button className='nav--list__btn' type="button">Dogs</button>
+              <button className='nav--list__btn' type="button" onClick={() => props.setAnimals('dogs')}>Dogs</button>
             </li>
           </ul>
-        </section>
-        <section className='cart'>
-          <div className='cart--imgContainer'>
-            <img className='img' src={cartIcon} alt="cart icon" />
-          </div>
-          <p className='cart--number'>{animals.length}</p> 
         </section>
       </div>
     </nav>

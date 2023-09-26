@@ -3,14 +3,24 @@ import { Header } from "./layout/Header";
 import { ListScene } from './scenes/list';
 import { CartScene } from "./scenes/cart";
 import { SelectedAnimalsProvider } from "./core/providers/selectedAnimals.provider";
-const data = require('./core/api/data.json');
+const dataJson = require('./core/api/data.json');
 
 export const App = () => {
+  const [data, setData] = React.useState([]);
+
+  const setAnimals = (animal: string)  => {
+    if (animal === 'cats') {
+      setData(dataJson.cats)
+    } else {
+      setData(dataJson.dogs)
+    }
+  }
+
   return (
     <SelectedAnimalsProvider>
-      <Header />
+      <Header setAnimals={setAnimals}/>
       <main className="home">
-        <ListScene  pictures={data.cats}/>
+        <ListScene  pictures={data}/>
         <CartScene />
       </main>
     </SelectedAnimalsProvider>

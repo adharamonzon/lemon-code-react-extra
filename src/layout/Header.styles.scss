@@ -38,25 +38,6 @@
   }
 }
 
-.cart {
-  &--imgContainer {
-    width: 45px;
-    position: absolute;
-  }
-  &--number {
-    position: relative;
-    left: 34px;
-    bottom: -21px;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .img {
   width: 100%;
 }

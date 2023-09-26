@@ -7,11 +7,11 @@ interface Props {
 
 interface Animal { 
   animals: Pictures[],
-  addNewAnimal: (animals: Pictures[]) => void;
+  addNewAnimal: (animals: Pictures | Pictures[]) => void;
 }
 
 export const SelectedAnimalsContext = React.createContext<Animal>({
-  animals: [{title: '', url: '', id: 1, selected: true}],
+  animals: [{name: '', url: '', id: 1, selected: true}],
   addNewAnimal: (animals) => {}
 });
 
